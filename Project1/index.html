@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stailion</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Baloo Bhai';
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(img/bg.jpg);
+            background-size: cover;
+        }
+
+
+
+        /* Left */
+        .left {
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        .left img {
+            width: 118px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 5px;
+            font-size: 36px;
+        }
+
+        /* Middle */
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 12px auto;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 34px 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+
+        /* Right */
+        .right {
+            position: absolute;
+            right: 20px;
+            top: 13px;
+            display: inline-block;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai';
+            margin: 20px 4px;
+            background-color: black;
+            color: white;
+            border: 2px solid gray;
+            border-radius: 10px;
+            padding: 4px 14px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+
+        /* container */
+        .container {
+            position: absolute;
+            top: 230px;
+            right: 16px;
+            margin: 34px 8px;
+            padding: 4px;
+            border: 2px solid rgb(150, 150, 150);
+            width: 30%;
+            border-radius: 12px;
+        }
+
+        .forms input {
+            font-family: 'Baloo Bhai';
+            text-align: center;
+            display: block;
+            width: 340px;
+            padding: 2px;
+            margin: 4px auto;
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 12px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+        }
+
+        .quote {
+            text-align: center;
+            font-size: 30px;
+            width: 38%;
+            display: block;
+            padding: 33px;
+            margin: 24px 10px;
+            position: absolute;
+            left: 10px;
+            top: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Stalion Fitness</div>
+        </div>
+
+        <!-- for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="quote">
+        "Most people fail, not because of lack of desire, but, because of lack of commitment.” –Vince Lombardi
+    </div>
+    <div class="container">
+        <h1>Join Us !</h1>
+        <form action="noaction.php">
+            <div class="forms">
+                <input type="text" name="Name" placeholder="Name">
+            </div>
+            <div class="forms">
+                <input type="text" name="Age" placeholder="Age">
+            </div>
+            <div class="forms">
+                <input type="text" name="Gender" placeholder="Gender">
+            </div>
+            <div class="forms">
+                <input type="text" name="Locality" placeholder="Locality">
+            </div>
+            <div class="forms">
+                <input type="text" name="Mobile Number" placeholder="Mobile Number">
+            </div>
+            <div class="forms">
+                <input type="text" name="Email Address" placeholder="Email Address">
+            </div>
+
+            <div>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
