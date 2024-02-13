@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto Condensed', sans-serif;
+    color: black;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(162, 197, 228);
+}
+
+#main img{
+    height:60px;
+    cursor: pointer;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+#nav-part2{
+    display: flex;
+    gap:55px;
+    align-items: center;
+    cursor: pointer;
+}
+#nav-part3{
+    display: flex;
+    gap:55px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+#nav h3{
+    text-transform: uppercase;
+}
+#nav h4{
+    text-transform: uppercase;
+}
+
+#nav button{
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 18px 20px;
+    background-color:black;
+    color: white;
+    border-style: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#container h1{
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+#container h1 span{
+    background-color: aliceblue;
+    font-size: 25px;
+    padding: 22px 35px;
+    margin: 0px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#container h1:nth-child(1){
+    margin-top: 60px;
+}
+
+#main #img-1{
+    height: 250px;
+    position: absolute;
+    top: 18%;
+    left:9%;
+    border-radius: 20px;
+}
+#main #img-2{
+    height: 200px;
+    position: absolute;
+    bottom: 18%;
+    right:12%;
+    border-radius: 20px;
+}
+
+#main h5{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#main #icons{
+    position: absolute;
+    left: 2%;
+    bottom: 0.5%;
+}
