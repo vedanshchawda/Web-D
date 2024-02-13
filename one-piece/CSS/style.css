@@ -1,0 +1,385 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: #000000;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    justify-content: flex-start;
+}
+
+#navbar::before {
+    background-color: black;
+    content: "";
+    height: 12vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/* Logo and navigation bar */
+#logo img {
+    height: 66px;
+    margin: 3px 20px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    font-size: 1rem;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    margin: 12px;
+    padding: 23px 50px;
+    text-decoration: none;
+    font-family: Rowdies;
+}
+
+#navbar ul li a:hover {
+    color: grey;
+}
+
+
+/* home */
+#home {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home ::before {
+    background: url("../img/home.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 12vh;
+    left: 0px;
+    z-index: -1;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    padding: 34px;
+    text-shadow: #140301 2px 2px;
+}
+
+#home p {
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: Rowdies;
+}
+
+
+/* About */
+#about {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about::before {
+    background: url(../img/about.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 112vh;
+    z-index: -1;
+    opacity: 100%;
+    filter: brightness(0.5);
+}
+
+#about h1 {
+    color: white;
+    text-align: center;
+    padding: 34px;
+    text-shadow: #140301 2px 2px;
+}
+
+#about p {
+    color: rgb(255, 255, 255);
+    padding: 12px 80px;
+    font-size: 1.3rem;
+    text-align: justify;
+    font-family: Rowdies;
+    text-shadow: #140301 2px 2px;
+}
+
+
+/* Episodes */
+#episodes {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#episodes::before {
+    background: url(../img/episode.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 212vh;
+    z-index: -1;
+}
+
+#episodes h1 {
+    padding: 34px;
+    color: white;
+    text-align: center;
+    text-shadow: #140301 2px 2px;
+}
+
+#episodes h2 {
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+#episodes p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Rowdies;
+}
+
+#episodes #episode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#episodes .ep {
+    border: 2px solid #ffffff;
+    margin: 12px;
+    padding: 18px;
+    border-radius: 23px;
+    background-color: #000000;
+    height: 300px;
+    width: 300px;
+}
+
+#episodes .ep img {
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+#episodes .ep:hover {
+    background-color: #838383;
+    cursor: pointer;
+}
+
+
+/* Characters*/
+#characters {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#characters::before {
+    background: url(../img/character.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 120vh;
+    width: 100vw;
+    top: 312vh;
+    z-index: -1;
+}
+
+#characters #chars {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#characters .chr {
+    border: 2px solid #fffffd;
+    margin: 12px;
+    padding: 18px;
+    border-radius: 23px;
+    background-color: #000000;
+    height: 150px;
+    width: 160px;
+}
+
+#characters h1 {
+    padding: 34px;
+    color: white;
+    text-align: center;
+    text-shadow: #140301 2px 2px;
+}
+
+#characters h2 {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
+
+
+#characters .chr:hover img {
+    transform: scale(1.1);
+}
+
+#characters .chr:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+    transition-duration: 0.5s;
+    background-color: #3d0200;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+p {
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    font-family: Rowdies;
+}
+
+
+/* News and Updates*/
+
+#news {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#news::before {
+    background: url(../img/news.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 412vh;
+    z-index: -1;
+}
+
+#news h1 {
+    padding: 34px;
+    color: white;
+    text-align: center;
+    text-shadow: #140301 2px 2px;
+}
+
+#news #nws {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#news .news {
+    display: flex;
+    border: 2px solid #fffffd;
+    margin: 20px;
+    padding: 12px;
+    border-radius: 34px;
+    background-color: #000000;
+    height: 200px;
+    width: 200px;
+    opacity: 90%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#news .news img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+/* Utility Class */
+.h-primary {
+    font-size: 4rem;
+    padding: 12px;
+    font-family: Rowdies;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 12px;
+    font-family: Rowdies;
+}
+
+.center {
+    text-align: center;
+}
+
+.image {
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+button {
+    padding: 6px 10px;
+    margin: 2px;
+    background-color: grey;
+    border: 2px solid black;
+    color: white;
+    font-size: 0.6rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
